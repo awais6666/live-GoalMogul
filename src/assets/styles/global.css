@@ -1,0 +1,57 @@
+body {
+  background-color: #f9fdff;
+}
+p,
+a,
+label,
+input,
+select,
+button,
+legend,
+li {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: rgb(130, 212, 240);
+}
+
+input,
+button {
+  border-radius: 0;
+}
+
+.grow {
+  flex-grow: 2;
+}
+.p33 {
+  width: 33.3333%;
+}
+.p33 ul {
+  margin: 0px;
+}
+.one-third {
+  width: 33%;
+}
+
+header,
+main .row,
+footer {
+  display: flex;
+}
+
+.status-message {
+  display: none;
+  padding-top: 9px;
+}
+@media screen and (max-width: 1200px) {
+  .p33 {
+    width: 100%;
+  }
+}

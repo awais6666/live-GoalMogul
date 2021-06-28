@@ -1,0 +1,146 @@
+footer {
+  height: 48px;
+  background-color: var(--blue-3);
+  box-shadow: 0px 2px 24px -6px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  display: flex;
+}
+footer p {
+  font-size: 13px;
+  padding: 0 42px;
+  line-height: 48px;
+  color: var(--white);
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  /* width: 390px; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+footer ul li a {
+  color: var(--white);
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0 12px;
+  line-height: 48px;
+}
+
+.blackFooter {
+  background-color: #0b0d17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope";
+  .innerFooter {
+  font-family: "Manrope";
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 56px 24px;
+    color: white;
+    max-width: 1600px;
+    width: 100%;
+    @media screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+      text-align: center;
+      padding: 16px;
+    }
+    .footerDetail {
+      width: 60%;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    }
+    .footerLogo {
+      margin-bottom: 24px;
+      img {
+        width: 29px;
+        height: 28px;
+      }
+    }
+    .footerLink {
+      color: white;
+  font-family: "Manrope";
+  font-size: 14px;
+    }
+  }
+  .footerDownload {
+    font-size: 18px;
+    width: 40%;
+  line-height: 19px;
+
+    @media screen and (max-width:600px) {
+      width: 100%;
+    }
+    .AppDownloadDiv {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: "Manrope";
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .AppDownloadDiv {
+      margin: 10px 0px;
+    }
+    .AppDownloadDiv {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      .buttonDown {
+        height: 53px !important;
+        width: 170px;
+        position: initial;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-right: 25px;
+        border: 1px solid white;
+        border-radius: 10px;
+        @media screen and (max-width: 600px) {
+          margin-bottom: 20px;
+          border: 1px solid white;
+          border-radius: 8px;
+        margin-right: 0px;
+      }
+      }
+    }
+    .AppDownloadDiv {
+      // margin: 20px 0px 0px;
+    }
+  }
+  .footerLinkDiv {
+    margin-bottom: 24px;
+    line-height: 19px;
+    .footerLink {
+      margin-right: 10px;
+
+    }
+  }
+  .copywrightYear{
+  font-family: "Manrope";
+  margin-bottom: 0px;
+  line-height: 19px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    height: auto;
+    display: block;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer ul {
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    justify-content: center;
+  }
+}

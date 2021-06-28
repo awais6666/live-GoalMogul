@@ -1,0 +1,16 @@
+export const AppDownloadClick = "AppDownloadClick"
+export const RegisterByWeb = "RegisterByWeb"
+export const SignupByWeb = "SignupByWeb"
+export const logged_out = "logged_out"
+export const signup_started = "signup_started"
+export const signup_continue = "signup_continue"
+export const signup_completed = "signup_completed"
+export const signup_mobile_verification_started =
+  "signup_mobile_verification_started"
+export const signup_mobile_verification_submitted =
+  "signup_mobile_verification_submitted"
+export const login_started = "login_started"
+export const login_complete = "login_complete"
+export const profile_edit_started = "profile_edit_started"
+export const profile_updated = "profile_updated"
+export const error_encountered = "error_encountered"

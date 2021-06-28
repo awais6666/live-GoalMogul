@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /goal/
+Disallow: /invite/
+Disallow: /resend-verification/
+Disallow: /phone-verification/
+Disallow: /email-verification/
+Disallow: /report/
+Disallow: /password-reset/

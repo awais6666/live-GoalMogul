@@ -1,0 +1,19 @@
+.inputWithDetail {
+  margin-bottom: var(--spacing-half);
+}
+.inputDetail {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: bold;
+  margin-bottom: var(--spacing-3);
+}
+.inputDetail a {
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.buttonWrapper {
+  max-width: 300px;
+  width: 100%;
+  margin-top: var(--spacing-4);
+}

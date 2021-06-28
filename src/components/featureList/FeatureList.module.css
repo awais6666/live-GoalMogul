@@ -1,0 +1,43 @@
+.featuresList {
+  list-style-type: none;
+  display: flex;
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.featuresList li {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 36px 12px;
+}
+.featuresListIcon {
+  width: 126px;
+}
+.featuresListIcon img {
+  display: block;
+  position: relative;
+  width: 81px;
+  margin: 0 21px;
+}
+.featuresListContent h3 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  margin-bottom: 12px;
+  color: #134454;
+}
+.featuresListContent p {
+  font-size: 15px;
+  line-height: 21px;
+  color: #255f73;
+}
+@media screen and (max-width: 1200px) {
+  .featuresList {
+    width: 100%;
+  }
+  .featuresList li {
+    width: 100%;
+  }
+}

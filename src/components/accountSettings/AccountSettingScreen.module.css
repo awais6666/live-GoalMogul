@@ -1,0 +1,11 @@
+.accountScreen {
+  min-height: calc(100vh - 90px);
+  padding: var(--spacing-4);
+  position: relative;
+}
+
+.accountScreen > * {
+  margin: auto;
+  margin-bottom: var(--spacing-2);
+  max-width: 1280px;
+}

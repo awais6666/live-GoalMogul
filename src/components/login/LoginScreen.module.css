@@ -1,0 +1,63 @@
+.loginScreen {
+  min-height: calc(100vh - 90px);
+}
+.row {
+  display: block;
+  padding: 0 var(--spacing-4);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+}
+.card {
+  max-width: 1280px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing-4) auto;
+  padding: var(--spacing-5);
+  border: 1px solid #DFE0E1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card h1 {
+  margin: auto;
+  color: var(--gray-1);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  margin-bottom: var(--spacing-2);
+}
+
+.card h2 {
+  margin: auto;
+  color: var(--gray-1);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: var(--spacing-3);
+}
+
+.form {
+  width: 100%;
+  max-width: 368px;
+  margin: auto;
+}
+
+.buttonWrapper {
+  margin-bottom: var(--spacing-1);
+}
+
+.inputWithDetail {
+  margin-bottom: var(--spacing-half);
+}
+.inputDetail {
+  text-align: right;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: var(--spacing-3);
+}
+.inputDetail a {
+  font-weight: 600;
+  cursor: pointer;
+}

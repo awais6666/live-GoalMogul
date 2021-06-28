@@ -1,0 +1,13 @@
+html {
+  --spacing-rhythm: 8px;
+  --spacing-0: calc( var(--spacing-rhythm) * 0);
+  --spacing-half: calc( var(--spacing-rhythm) * 0.5);
+  --spacing-1: calc( var(--spacing-rhythm) * 1);
+  --spacing-2: calc( var(--spacing-rhythm) * 2);
+  --spacing-3: calc( var(--spacing-rhythm) * 3);
+  --spacing-4: calc( var(--spacing-rhythm) * 4);
+  --spacing-5: calc( var(--spacing-rhythm) * 5);
+  --spacing-6: calc( var(--spacing-rhythm) * 6);
+  --spacing-7: calc( var(--spacing-rhythm) * 7);
+  --spacing-8: calc( var(--spacing-rhythm) * 8);
+}

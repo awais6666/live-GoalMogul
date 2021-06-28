@@ -1,0 +1,100 @@
+nav {
+  background-color: var(--blue-3);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  height: 66px;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  padding: 0 32px;
+}
+
+nav ul li {
+  margin: auto 0 auto 24px;
+}
+
+.logoContainer {
+  flex-grow: 1;
+  margin: auto 0;
+}
+.logo {
+  width: 225px;
+  height: 85px;
+  background-image: url("../../assets/images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.singupBtn {
+  font-size: 16px !important;
+  min-height: 32px !important;
+}
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.menu {
+  display: none;
+  color: var(--white);
+  font-size: 32px;
+  cursor: pointer;
+}
+.menuWrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-1);
+  opacity: 0.5;
+}
+
+.menuContent {
+  width: 400px;
+  max-width: 80%;
+  height: 100%;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuContent ul {
+  flex-direction: column;
+  padding-bottom: var(--spacing-4);
+  height: initial;
+}
+.menuContent li {
+  margin: 0;
+  padding-top: var(--spacing-4);
+}
+.menuContent li a {
+  color: var(--gary-1);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  .navItem {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}

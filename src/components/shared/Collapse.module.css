@@ -1,0 +1,35 @@
+.collapse {
+  background: var(--color-white);
+  border: 1px solid #DFE0E1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--white);
+}
+.header {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--gray-1);
+  padding: var(--spacing-3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.header svg {
+  align-self: center;
+}
+
+.rotate {
+  transform: rotate(-90deg);
+}
+
+.content {
+  padding: 24px;
+  border-top: 1px solid var(--gray-5);
+}
+
+.hide {
+  display: none;
+}

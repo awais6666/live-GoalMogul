@@ -1,0 +1,278 @@
+.profileScreen {
+  min-height: calc(100vh - 90px);
+  display: block;
+}
+
+.appDownloadRow {
+  min-height: 543px;
+  display: flex;
+  justify-content: center;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 var(--spacing-4);
+  display: flex;
+}
+
+.appDownloadRow .contentWrapper {
+  padding-right: 0;
+  background-image: url(../../assets/images/app_preview_2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-color: #F9FDFF;
+}
+
+.appDownloadRow .contentWrapper .content {
+  width: 50%;
+  min-width: 400px;
+  padding-top: 195px;
+}
+
+.appDownloadRow .contentWrapper .content img {
+  display: none;
+}
+
+.appDownloadRow .contentWrapper h1 {
+  margin-bottom: var(--spacing-2);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  color: var(--gray-1);
+}
+
+.appDownloadRow .contentWrapper p {
+  margin-bottom: var(--spacing-5);
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.13px;
+  color: var(--gray-2);
+}
+
+.profileContainer {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-6) 0;
+}
+
+.profileContainer .left {
+  width: 416px;
+  background: #FFFFFF;
+  border: 1px solid #DFE0E1;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: var(--spacing-2);
+}
+
+.profileContainer .left img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: var(--spacing-3);
+}
+
+.profileContainer .left h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: black;
+  margin-bottom: var(--spacing-1);
+}
+
+.profileContainer .left .name {
+  margin-top: var(--spacing-2);
+}
+
+.profileContainer .left p {
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+.profileContainer .left .headline {
+  margin-bottom: var(--spacing-2);
+}
+
+.profileContainer .left hr {
+  border: none;
+  border-top: 1px solid #DFE0E1;
+}
+
+.profileContainer .left .customizeLink {
+  padding: var(--spacing-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileContainer .left .customizeLink h1 svg {
+  height: 25px;
+  vertical-align: middle;
+  margin-right: var(--spacing-1);
+  color: var(--gray-3);
+}
+
+.profileContainer .left .customizeLink p {
+  margin-bottom: var(--spacing-1);
+}
+
+.profileContainer .left .customizeLink input.editInviteCodeInput,
+.profileContainer .left .customizeLink p.inviteCodeDisplay,
+.profileContainer .left .customizeLink p.inviteCodeDisplay button {
+  margin: 0;
+}
+
+.profileContainer .left .customizeLink button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.profileContainer .left .customizeLink p.inviteCodeDisplay button {
+  color: var(--blue-2);
+  margin-left: var(--spacing-1);
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper input {
+  height: 32px;
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper input.inputErrorState {
+  border-color: var(--red-1);
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper span.inputErrorMsg {
+  position: absolute;
+  top: 36px;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--red-1);
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper button {
+  margin-left: var(--spacing-half);
+  height: 32px;
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper button svg {
+  height: 100%;
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper button.cancel {
+  background-color: var(--gray-6);
+  color: var(--gray-1);
+}
+
+.profileContainer .left .customizeLink div.invteCodeInputWrapper button.save {
+  background-color: var(--blue-3);
+  color: var(--white);
+}
+
+.profileContainer .right{
+  flex-grow: 1;
+}
+
+.profileContainer .right h1 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--gray-1);
+  margin-bottom: var(--spacing-3);
+  letter-spacing: 0.2px;
+}
+
+.profileContainer .right .infoCard {
+  background: var(--white);
+  border: 1px solid #DFE0E1;
+  border-radius: 5px;
+  margin-bottom: var(--spacing-2);
+  padding-right: var(--spacing-3);
+  display: flex;
+  align-items: center;
+}
+
+.profileContainer .right .infoCard:last-of-type {
+  margin-bottom: 0;
+}
+
+.profileContainer .right .infoCard .iconWrapper {
+  background: #F2F2F2;
+  border-radius: 5px;
+  width: 69px;
+  height: 69px;
+  margin: 24px 20px 24px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.profileContainer .right .infoCard .iconWrapper svg {
+  display: block;
+  margin: auto;
+}
+
+.profileContainer .right .infoCard .textWrapper {
+  flex-grow: 1;
+}
+
+.profileContainer .right .infoCard .textWrapper h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: var(--spacing-1);
+}
+
+.profileContainer .right .infoCard .textWrapper p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1050px) {
+  .appDownloadRow .contentWrapper {
+    background-image: none;
+    padding-right: var(--spacing-4);
+    box-sizing: border-box;
+  }
+  .appDownloadRow .contentWrapper .content {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+    padding-top: var(--spacing-6);
+  }
+  .appDownloadRow .contentWrapper .content > div {
+    display: flex;
+    justify-content: center;
+  }
+  .appDownloadRow .contentWrapper .content img {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    margin: var(--spacing-6) auto;
+  }
+  .profileContainer .contentWrapper {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .profileContainer .contentWrapper .left {
+    width: 100%;
+    margin-bottom: var(--spacing-3);
+  }
+}

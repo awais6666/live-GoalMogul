@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      if (window.location.protocol != "https:") {
+        window.location.protocol = "https"
+      }
+    </script>
+    <script>
+      function initSegment() {
+        !(function () {
+          var analytics = (window.analytics = window.analytics || [])
+          if (!analytics.initialize)
+            if (analytics.invoked)
+              window.console &&
+                console.error &&
+                console.error("Segment snippet included twice.")
+            else {
+              analytics.invoked = !0
+              analytics.methods = [
+                "trackSubmit",
+                "trackClick",
+                "trackLink",
+                "trackForm",
+                "pageview",
+                "identify",
+                "reset",
+                "group",
+                "track",
+                "ready",
+                "alias",
+                "debug",
+                "page",
+                "once",
+                "off",
+                "on",
+                "addSourceMiddleware",
+                "addIntegrationMiddleware",
+                "setAnonymousId",
+                "addDestinationMiddleware",
+              ]
+              analytics.factory = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments)
+                  t.unshift(e)
+                  analytics.push(t)
+                  return analytics
+                }
+              }
+              for (var e = 0; e < analytics.methods.length; e++) {
+                var key = analytics.methods[e]
+                analytics[key] = analytics.factory(key)
+              }
+              analytics.load = function (key, e) {
+                var t = document.createElement("script")
+                t.type = "text/javascript"
+                t.async = !0
+                t.src =
+                  "https://cdn.segment.com/analytics.js/v1/" +
+                  key +
+                  "/analytics.min.js"
+                var n = document.getElementsByTagName("script")[0]
+                n.parentNode.insertBefore(t, n)
+                analytics._loadOptions = e
+              }
+              analytics.SNIPPET_VERSION = "4.13.1"
+              analytics.load("53GqRsvgsNfRNjV8P88DVG43UzhK2ZfE")
+              analytics.page()
+            }
+        })()
+      }
+      if ("%NODE_ENV%" === "production") {
+        initSegment()
+      }
+    </script>
+    <!-- ManyChat -->
+    <!-- <script src="//widget.manychat.com/391422631718856.js" async="async"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-75K9HZ04H1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "G-75K9HZ04H1")
+    </script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = "2.0"
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      )
+      fbq("init", "405876870564355")
+      fbq("track", "PageView")
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none;"
+        src="https://www.facebook.com/tr?id=405876870564355&ev=PageView&noscript=1"
+    /></noscript>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>GoalMogul Web</title>
+    <meta name="keywords" content="GoalMogul,goal,web" />
+
+    <meta name="og:title" content="Achieve More, Together | GoalMogul" />
+    <meta
+      name="og:description"
+      content="Stretch your dreams, crush your goals. Help friends do the same. Life Planner and Goal-Sharing Community."
+    />
+    <meta
+      property="og:image"
+      content="https://www.goalmogul.com/assets/images/GoalMogulPromo.jpg"
+    />
+    <meta property="og:url" content="https://www.goalmogul.com" />
+    <meta property="og:site_name" content="GoalMogul, Inc." />
+    <meta name="twitter:image:alt" content="GoalMogul Logo" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script>
+      !(function (a, b, c, d, t) {
+        var e,
+          f = a.getElementsByTagName("head")[0]
+        if (!a.getElementById(c)) {
+          if (
+            ((e = a.createElement(b)),
+            (e.id = c),
+            e.setAttribute("data-vrlps-ucid", d),
+            e.setAttribute("data-vrlps-version", "2"),
+            e.setAttribute("data-vrlps-template", t),
+            (e.src =
+              "https://app.viral-loops.com/popup_assets/js/vl_load_v2.min.js"),
+            window.ub)
+          ) {
+            ;(jQuery = null), ($ = null)
+            var g = a.createElement(b)
+            ;(g.src = "https://code.jquery.com/jquery-2.2.4.min.js"),
+              f.appendChild(g)
+          }
+          f.appendChild(e)
+          var h = a.createElement("link")
+          ;(h.rel = "stylesheet"),
+            (h.type = "text/css"),
+            (h.href = "https://app.viral-loops.com/static/vl-loader.css"),
+            f.appendChild(h)
+          var i = a.createElement("div")
+          ;(i.id = "vl-overlay"), (i.style.display = "none")
+          var j = a.createElement("div")
+          ;(j.id = "vl-loader"),
+            i.appendChild(j),
+            a.addEventListener("DOMContentLoaded", function (b) {
+              a.body.appendChild(i)
+              for (
+                var c = a.getElementsByClassName("vrlps-trigger"), d = 0;
+                d < c.length;
+                d++
+              )
+                c[d].removeAttribute("href"),
+                  (c[d].onclick = function () {
+
+                    a.getElementById("vl-overlay").style.display = "block"
+                  })
+              var e = a.querySelectorAll("[data-vl-widget='popupTrigger']")
+              ;[].forEach.call(e, function (b) {
+                
+                var c = a.createElement("div")
+                ;(c.className = "vl-embedded-cta-loader"), b.appendChild(c)
+              })
+            })
+        }
+      })(
+        document,
+        "script",
+        "vrlps-js",
+        "4Uko7ORHhLucCMwGtjh01yCll3E",
+        "sweepstake"
+      )
+    </script>
+  </body>
+</html>

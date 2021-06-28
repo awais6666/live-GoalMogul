@@ -1,0 +1,511 @@
+.goalScreen {
+  min-height: calc(100vh - 90px);
+  display: block;
+  letter-spacing: 0.2px;
+}
+.row {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  box-sizing: border-box;
+}
+.content {
+  max-width: 1280px;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+}
+.clickable {
+  cursor: pointer;
+}
+
+/* Goal card */
+.goal {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.goalCard {
+  background: #FFFFFF;
+  border: 1px solid var(--gray-5);
+  border-radius: 5px;
+}
+
+.goalOwner {
+  display: flex;
+  margin: var(--spacing-2) var(--spacing-2) 0 var(--spacing-2);
+}
+
+.goalOwner > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.goalOwner .text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3B414B;
+}
+
+.goalOwner .text .topRow {
+  display: flex;
+  margin-bottom: var(--spacing-half);
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.goalOwner .text .topRow > * {
+  margin-right: var(--spacing-1);
+}
+
+.goalOwner .text .name {
+  font-weight: 600;
+}
+
+.goalOwner .text .badges {
+  display: flex;
+  align-items: center;
+}
+
+.goalOwner .text img.badge {
+  height: 10px;
+}
+
+.goalOwner .text .bottomRow {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.goalOwner .text .bottomRow > * {
+  margin-right: var(--spacing-1);
+}
+
+.goalOwner .text .bottomRow .divider {
+  border: none;
+  border-right: 1px solid #BDBDBD;
+  height: 8px;
+}
+
+.goalOwner .text .bottomRow svg {
+  color:#3B414B;
+}
+
+.goalOwner .ellipsis {
+  color: var(--gray-3);
+  padding-top: var(--spacing-half);
+}
+
+.goalTitle {
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0 var(--spacing-2);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-6);
+}
+
+.updates {
+  margin: 0 var(--spacing-2);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-6);
+  display: flex;
+  overflow: hidden;
+}
+
+.updates div {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-right: var(--spacing-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.updates div.addUpdate {
+  background-color: var(--gray-5);
+  color: #000000;
+}
+
+.updates div.addUpdate svg {
+  width: 17px;
+  height: 17px;
+}
+
+.updates div.emptyUpdate {
+  border: 1px dashed var(--gray-5);
+  background-color: var(--gray-6);
+}
+
+.updates div.update img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.updates div.update {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.updates div.update span {
+  font-size: 5px;
+  text-align: center;
+}
+
+
+.progress {
+  margin: 0 var(--spacing-2) var(--spacing-2) var(--spacing-2);
+  padding-top: 12px;
+}
+
+.progress .dates {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  line-height: 12px;
+  color: #3B414B;
+  margin-bottom: var(--spacing-1);
+}
+
+.progress .progressBar {
+  display: flex;
+}
+
+.progress .progressBar > div {
+  height: 12px;
+  flex-grow: 1;
+  margin-right: 2px;
+}
+
+.progress .progressBar > div:first-of-type {
+  border-radius: 6px 0 0 6px;
+}
+
+.progress .progressBar > div:last-of-type {
+  margin-right: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.progress .progressBar .completedStep {
+  background-color: var(--green-2);
+}
+
+.progress .progressBar .incompleteStep {
+  background-color: var(--gray-5);
+}
+
+.info {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: var(--gray-6);
+  padding: var(--spacing-1) var(--spacing-2);
+}
+
+.info span {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--gray-3);
+  margin-right: var(--spacing-2);
+}
+
+.info span svg {
+  height: 10px;
+  margin-right: var(--spacing-half);
+}
+
+.info span.like svg {
+  color: var(--red-1);
+}
+.info span.comment svg {
+  color: var(--yellow-1);
+}
+.info span.share svg {
+  color: var(--green-2);
+}
+
+.actions {
+  display: flex;
+  border-bottom: 1px solid var(--gray-6);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--gray-3);
+}
+
+.actions > div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.actions .actionBtns {
+  padding: 12px 0;
+}
+
+.actions svg {
+  height: 13px;
+  margin-right: var(--spacing-1);
+}
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-1) var(--spacing-2);
+}
+
+.reply span {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.reply svg {
+  color: var(--blue-3);
+  height: 20px;
+  width: 20px;
+}
+
+.collapseHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--gray-6);
+  padding: 12px 16px;
+  color: var(--gray-1);
+  cursor: pointer;
+}
+
+.collapseHeader .left {
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  letter-spacing: 0.57px;
+}
+
+.collapseHeader .left span {
+  margin-right: var(--spacing-1);
+}
+
+.collapseHeader .left .divider {
+  border: none;
+  border-right: 1px solid #333;
+  height: 8px;
+}
+
+.collapseHeader svg {
+  height: 16px;
+  width: 16px;
+  margin-right: var(--spacing-1);
+}
+
+.collapseHeader .arrow {
+  margin-right: var(--spacing-1);
+}
+
+.collapseHeader .arrow svg {
+  margin: 0;
+}
+
+.collapse.close .collapseHeader .arrow svg {
+  transform: rotate(-90deg);
+}
+
+.collapse.close .collapseContent{
+  display: none;
+}
+
+.steps div.step,
+.needs div.need {
+  display: flex;
+  border-bottom: 1px solid var(--gray-6);
+  padding: var(--spacing-2);
+  align-items: center;
+}
+
+.steps div.step > svg,
+.needs div.need > svg {
+  width: 18px;
+  height: 18px;
+}
+
+.steps div.step.completed > svg,
+.needs div.need.completed > svg {
+  color: var(--green-2);
+}
+
+.steps div.step.incomplete > svg,
+.needs div.need.incomplete > svg {
+  color: var(--gray-5);
+}
+
+.steps div.step div.stepContent,
+.needs div.need div.needContent {
+  margin-left: var(--spacing-2);
+  flex-grow: 1;
+  color: #3B414B;
+}
+
+.steps div.step div.stepContent span.description,
+.needs div.need div.needContent span.description {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.steps div.step div.stepContent span,
+.needs div.need div.needContent span  {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.steps div.step div.stepContent hr,
+.needs div.need div.needContent hr {
+  border: none;
+  border-bottom: 1px solid var(--gray-6);
+}
+
+.steps div.step div.stepContent span svg,
+.needs div.need div.needContent span svg {
+  width: 12px;
+  height: 12px;
+  margin-right: var(--spacing-1);
+}
+
+
+/* Right side */
+.right {
+  display: none;
+  margin-left: var(--spacing-2);
+}
+
+.profileCard, .signupCard, .learnMoreCard {
+  width: 416px;
+  background: #FFFFFF;
+  border: 1px solid #DFE0E1;
+  border-radius: 5px;
+}
+/* Signup and learn more cards */
+.signupCard, .learnMoreCard {
+  padding: var(--spacing-2);
+  box-sizing: border-box;
+}
+
+.signupCard h1,
+.learnMoreCard h1 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  margin-bottom: var(--spacing-2);
+}
+
+.signupCard p,
+.learnMoreCard p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray-1);
+}
+
+.signupCard button,
+.learnMoreCard button {
+  min-height: 30px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* signup card */
+.signupCard {
+  margin-bottom: var(--spacing-2);
+}
+
+.signupCard p {
+  margin-bottom: var(--spacing-3);
+}
+
+/* learn more card */
+.learnMoreCard .learnMoreContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-3);
+}
+
+.learnMoreCard .learnMoreContent img {
+  height: 96px;
+  margin-right: var(--spacing-half);
+}
+
+/* Profile Card */
+.profileCard {
+  text-align: center;
+  padding-bottom: var(--spacing-2);
+}
+
+.profileCard img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: var(--spacing-3);
+}
+
+.profileCard h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: black;
+  margin-bottom: var(--spacing-1);
+}
+
+.profileCard .name {
+  margin-top: var(--spacing-2);
+}
+
+.profileCard p {
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+.profileCard .headline {
+  margin-bottom: var(--spacing-2);
+}
+
+.profileCard .buttonWrapper {
+  padding: 0 var(--spacing-4) var(--spacing-4) var(--spacing-4);
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profileCard hr {
+  border: none;
+  border-top: 1px solid #DFE0E1;
+  margin-bottom: var(--spacing-2);
+}
+
+@media screen and (max-width: 960px) {
+  .content {
+    flex-direction: column;
+  }
+  .right {
+    margin-left: 0;
+    margin-top: var(--spacing-2);
+  }
+  .profileCard, .signupCard, .learnMoreCard {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+.appDownload ul {
+  list-style-type: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.appDownload ul li {
+  box-sizing: border-box;
+  background-color: black;
+  border-radius: 10px;
+  margin: var(--spacing-1) 12px var(--spacing-1) 0;
+  width: 160px;
+  box-sizing: border-box;
+  background: linear-gradient(45deg, black, #3b3b3b);
+  cursor: pointer;
+
+}
+
+.appDownload ul li:last-of-type {
+  margin-right: 0;
+}
+
+.appDownload ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.appDownload ul li svg {
+  margin: var(--spacing-1) 12px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  white-space: nowrap;
+}
+.textWrapper b {
+  font-weight: 900;
+}
+
+.textRow1 {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+}
+
+.textRow2 {
+  font-size: 18px;
+  line-height: 21px;
+}
+@media screen and (max-width: 750px) {
+  .appDownload ul li {
+    width: 47%;
+    padding: 0px 10px;
+  }
+  .appDownload ul li svg {
+    margin: var(--spacing-1) 0px;
+  }
+  .textRow2 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .textWrapper {
+   text-align: center;
+  }
+  .fbButton{
+    height: 25px;
+  }
+}

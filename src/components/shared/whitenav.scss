@@ -1,0 +1,91 @@
+.WhiteNav {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 7px -5px black;
+    .innerNav {
+        max-width: 1300px;
+        width: 100%;
+        img {
+            height: 31px;
+            margin: 24px;
+            @media screen and (max-width: 600px) {
+                margin: 25px 16px 23px;
+            }
+        }
+    }
+
+    .mobDownload {
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+        .downloadBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 4px;
+            // button{
+            img {
+                width: 33px;
+                height: 34px;
+                margin-right: 12px;
+            }
+            // }
+        }
+    }
+    .reviewMobSlider {
+        .reviewSlide {
+            .innerSlide {
+                a {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+.navV5 {
+    padding: 27px 20px;
+    background: #f3fcff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    @media screen and (max-width: 600px) {
+        position: sticky;
+        top: 0px;
+    }
+    .innerNav {
+        max-width: 1300px;
+        width: 100%;
+        .logoDiv {
+            width: 201px;
+            @media screen and (max-width: 600px) {
+                width: 134px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .mobDownload {
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+        }
+        .downloadBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 4px;
+            // button{
+            img {
+                width: 33px;
+                height: 34px;
+                margin-right: 12px;
+            }
+            // }
+        }
+    }
+}

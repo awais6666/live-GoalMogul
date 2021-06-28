@@ -1,0 +1,127 @@
+.downloadModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadModal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-1);
+  opacity: 0.5;
+}
+
+.downloadModal .modal {
+  width: 80%;
+  max-width: 1064px;
+  min-height: 543px;
+  background: #F9FDFF;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/static/media/app_preview_2.14b61cf4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.downloadModal .modal .closeModalX {
+  position: absolute;
+  top: var(--spacing-2);
+  right: var(--spacing-2);
+  cursor: pointer;
+}
+
+.downloadModal .modal .closeModalX svg {
+  width: 40px;
+  height: 40px;
+  color: var(--blue-3);
+}
+
+.downloadModal .modal .modalText {
+  width: 332px;
+  margin-left: var(--spacing-8);
+}
+
+.downloadModal .modal .modalText h1 {
+  font-size: 29px;
+  line-height: 38px;
+  letter-spacing: 0.13px;
+  font-weight: bold;
+  color: var(--gray-1);
+  margin-bottom: var(--spacing-2);
+}
+
+.downloadModal .modal .modalText p {
+  font-size: 23px;
+  line-height: 31px;
+  letter-spacing: 0.13px;
+  color: var(--gray-2);
+  margin-bottom: var(--spacing-4);
+}
+
+.downloadModal .modal .modalText .buttonWrapper {
+  margin-top: var(--spacing-2);
+}
+
+.downloadModal .modal .modalText .buttonWrapper.closeButton {
+  display: none;
+}
+
+.downloadModal .modal img {
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .downloadModal .modal {
+    background-image: none;
+    align-items: center;
+    width: calc(100% - var(--spacing-4));
+    margin: var(--spacing-2);
+    padding: var(--spacing-2);
+    box-sizing: border-box;
+  }
+
+  .downloadModal .modal .closeModalX {
+    display: none;
+  }
+
+  .downloadModal .modal .modalText {
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - var(--spacing-8));
+    overflow: auto;
+  }
+
+  .downloadModal .modal .modalText p {
+    margin-bottom: var(--spacing-2);
+  }
+
+  .downloadModal .modal img {
+    display: block;
+    width: 100%;
+    margin: var(--spacing-3) 0;
+    flex-shrink: 1;
+  }
+
+  .downloadModal .modal .modalText .buttonWrapper {
+    margin-top: var(--spacing-1);
+  }
+
+  .downloadModal .modal .modalText .buttonWrapper.closeButton {
+    display: block;
+  }
+}

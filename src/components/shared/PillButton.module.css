@@ -1,0 +1,71 @@
+.button {
+  border-radius: 60px;
+  width: 100%;
+  border: none;
+  outline: none;
+  min-height: 40px;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  background-color: var(--blue-3);
+  color: var(--white);
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0 16px;
+}
+/* Solid */
+.primary-solid {
+  background-color: var(--blue-3);
+  color: var(--white);
+}
+
+.default-solid {
+  background-color: var(--gray-6);
+  color: var(--gray-1);
+}
+
+.disabled-solid {
+  background-color: var(--gray-6);
+  color: var(--gray-4);
+}
+
+/* Outline */
+.primary-outline {
+  background-color: transparent;
+  color: var(--blue-3);
+  border: 1px solid var(--blue-3);
+}
+
+.default-outline {
+  background-color: transparent;
+  color: #828282;
+  border: 1px solid #828282;
+}
+
+.disabled-outline {
+  background-color: transparent;
+  color: var(--gray-4);
+  border: 1px solid var(--gray-6);
+}
+
+/* Text */
+.primary-text {
+  background-color: transparent;
+  color: var(--blue-3);
+}
+
+.default-text {
+  background-color: transparent;
+  color: var(--gray-1);
+}
+
+.disabled-text {
+  background-color: transparent;
+  color: var(--gray-4);
+}
+
+/* Selected state */
+.selected.default-outline {
+  background-color: var(--gray-6);
+  color: var(--gray-1);
+}

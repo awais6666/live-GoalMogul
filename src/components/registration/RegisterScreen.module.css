@@ -1,0 +1,75 @@
+.registerScreen {
+  min-height: calc(100vh - 90px);
+}
+.row {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  padding: var(--spacing-4) var(--spacing-3);
+}
+.iconWrapper {
+  height: 461px;
+  margin: auto 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.iconWrapper img {
+  width: 100%;
+}
+.signupCard {
+  width: 524px;
+  background: var(--white);
+  border: 1px solid #DFE0E1;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: var(--spacing-3);
+}
+.signupCard h1 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--gray-1);
+  margin-bottom: var(--spacing-3);
+}
+.signupCard p {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.13px;
+  color: var(--gray-1);
+  margin-bottom: var(--spacing-3);
+}
+.signupCard label span {
+  font-weight: normal;
+}
+
+.dobSelectWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dobSelectWrapper select {
+  margin-right: var(--spacing-2);
+}
+.dobSelectWrapper select:last-of-type {
+  margin-right: 0;
+}
+
+.genderButtonGroup {
+  margin-top: var(--spacing-half);
+  margin-bottom: var(--spacing-3);
+}
+
+@media screen and (max-width: 1100px) {
+  .row {
+    padding: var(--spacing-4) 0;
+  }
+  .iconWrapper {
+    display: none;
+  }
+  .signupCard {
+    width: 100%;
+    border: none;
+  }
+}

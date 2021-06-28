@@ -1,0 +1,15 @@
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buttonWrapper > * {
+  margin-right: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+  width: auto;
+  flex-grow: 1;
+}
+.buttonWrapper > *:last-of-type {
+  margin-right: 0;
+}

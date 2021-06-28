@@ -1,0 +1,26 @@
+.banner {
+  max-width: 1280px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--spacing-1) var(--spacing-2) var(--spacing-1) var(--spacing-6);
+  color: var(--gray-1);
+  border: 1px solid;
+  border-radius: 3px;
+  margin-bottom: var(--spacing-3);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.banner svg {
+  position: absolute;
+  left: var(--spacing-2);
+  top: var(--spacing-1);
+}
+.error {
+  background-color: #FFFBED;
+  border-color: var(--yellow-1);
+}
+.error svg {
+  color: var(--yellow-1);
+}
